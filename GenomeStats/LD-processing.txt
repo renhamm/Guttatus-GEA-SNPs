@@ -1,0 +1,32 @@
+#!/bin/bash
+#SBATCH --job-name=LD-files
+#SBATCH --account=co_rosalind
+#SBATCH --partition=savio2_htc
+#SBATCH --qos=rosalind_htc2_normal
+#SBATCH --cpus-per-task=5
+#SBATCH --ntasks=1
+#SBATCH --time=400:00:00
+#SBATCH --error=/global/scratch/users/laurenhamm/thesis/aim1/Alignment_v3/GenomeStats/LD/LD-chrfiles.err
+#SBATCH --output=/global/scratch/users/laurenhamm/thesis/aim1/Alignment_v3/GenomeStats/LD/LD-chrfiles.out
+#SBATCH --mail-user=laurenhamm@berkeley.edu
+#SBATCH --mail-type=All
+
+cd /global/scratch/users/laurenhamm/thesis/aim1/Alignment_v3/GenomeStats/LD
+
+grep "Chr_01" G4t90_327.ld > Chr_01.ld
+grep "Chr_02" G4t90_327.ld > Chr_02.ld
+grep "Chr_03" G4t90_327.ld > Chr_03.ld
+grep "Chr_04" G4t90_327.ld > Chr_04.ld
+grep "Chr_05" G4t90_327.ld > Chr_05.ld
+grep "Chr_06" G4t90_327.ld > Chr_06.ld
+grep "Chr_07" G4t90_327.ld > Chr_07.ld
+grep "Chr_08" G4t90_327.ld > Chr_08.ld
+grep "Chr_09" G4t90_327.ld > Chr_09.ld
+grep "Chr_10" G4t90_327.ld > Chr_10.ld
+grep "Chr_11" G4t90_327.ld > Chr_11.ld
+grep "Chr_12" G4t90_327.ld > Chr_12.ld
+grep "Chr_13" G4t90_327.ld > Chr_13.ld
+grep "Chr_14" G4t90_327.ld > Chr_14.ld
+
+
+
